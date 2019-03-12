@@ -14,7 +14,7 @@ You can see <https://github.com/wjdp/htmltest#wrench-configuration> for more.
 
 ## Configuration
 
-The default configuration files is read from `.htmltest.yml`, .e.g.:
+The default configuration is read from `.htmltest.yml` if available, .e.g.:
 
 ```yaml
 # .htmltest.yml
