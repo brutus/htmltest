@@ -1,11 +1,13 @@
 # Dockerized HTMLTest
 
+**VERSION**: `0.0.0`
+
 This image holds a compiled [HTMLTest] binary.
 
 ## Usage
 
 ```shell
-docker run --rm registry.uberspace.is/uberspace/homepage/htmltest --help
+docker run --rm brutus/htmltest --help
 ```
 
 The _entry point_ is `/bin/htmltest`, the _working directory_ `/var/www`.
@@ -33,7 +35,7 @@ Check HTML files in a `./public/` directory, ignoring checks for external stuff:
 ```shell
 docker run --rm \
 	--volume "$(pwd)":/var/www \
-	registry.uberspace.is/uberspace/homepage/htmltest --skip-external public
+	brutus/htmltest --skip-external public
 ```
 
 ### CI
@@ -44,7 +46,7 @@ You can also run this from the CI, for that use the `alpine` tag:
 test-html:
   stage: test
   image:
-    name: registry.uberspace.is/uberspace/homepage/htmltest:alpine
+    name: brutus/htmltest:alpine
     entrypoint: [""]
   script:
     - /bin/htmltest

@@ -1,0 +1,5 @@
+---
+summary: Initial version 🎉.
+added:
+  - 🐳 A ``latest`` tag, that is just the binary.
+  - 🐳 A ``alpine`` tag, that can be run in CI.
