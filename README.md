@@ -1,6 +1,6 @@
 # Dockerized HTMLTest
 
-**VERSION**: `0.0.0`
+**VERSION**: `0.1.0`
 
 This image holds a compiled [HTMLTest] binary.
 
