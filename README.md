@@ -2,6 +2,8 @@
 
 This image holds a compiled [HTMLTest] binary.
 
+It is build to: <https://hub.docker.com/r/brutus/htmltest>.
+
 ## Usage
 
 ```shell
@@ -38,7 +40,7 @@ docker run --rm \
 
 ### CI
 
-You can also run this from the CI, for that use the `alpine` tag:
+You can also run this from a CI, e.g. for Gitlab use the `alpine` tag:
 
 ```yaml
 test-html:
